@@ -417,7 +417,7 @@ def run_cross_check_eval(environment, test, testing_sha, stockfish_testing):
     if "options" in test["crosscheck"]:
         cmd += test["crosscheck"]["options"]
 
-    cmd_ckpt = cmd + ["--net", f"{checkpoint}"]
+    cmd_ckpt = cmd + ["--checkpoint", f"{checkpoint}"]
     # TODO: fails with checking hash in
     # execute("Run cross check eval from .ckpt ", cmd_ckpt, nnue_pytorch_dir, False)
 
