@@ -80,8 +80,8 @@ training:
 testing:
   crosscheck:
     trainer:
-      owner: official-stockfish
-      sha: 78a57c567c985120456a9fe22ac2fc50f1e0fb2b
+      owner: DanSamek
+      sha: ff401a63d72cc112a94ce9824528e6ea04cfdcab
     binpack: official-stockfish/master-binpacks/fishpack32.binpack
     evalfile: small
     options:
@@ -92,11 +92,11 @@ testing:
   reference:
     code:
       owner: official-stockfish
-      sha: 4a6c7e77a5a8eb1d5eec1ce1ff199773fb885f86
+      sha: ed651aab544a330a9c8ae0dc2d8d51d5d48a8112
   testing:
     code:
-      owner: official-stockfish
-      sha: 4a6c7e77a5a8eb1d5eec1ce1ff199773fb885f86
+      owner: DanSamek
+      sha: 95baacd1d15a865005c45c5346b05a311f5b8d33
   fastchess:
     code:
       owner: Disservin
