@@ -93,10 +93,12 @@ testing:
     code:
       owner: official-stockfish
       sha: ed651aab544a330a9c8ae0dc2d8d51d5d48a8112
+      target: build
   testing:
     code:
       owner: DanSamek
       sha: 6f3d4a5bd0e3613e85a4110d30be218580900458
+      target: build
   fastchess:
     code:
       owner: Disservin
