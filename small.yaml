@@ -72,16 +72,16 @@ training:
           - --compile-backend=cudagraphs
         resume: none
       trainer:
-        owner: official-stockfish
-        sha: 0920370fe997c1c740b84a5054452b6f6d8c455f
+        owner: DanSamek
+        sha: e1b3c927e781e62d2c6c0b6323ad12c3e34c47c9
 #
 # Final testing stage using fastchess
 #
 testing:
   crosscheck:
     trainer:
-      owner: official-stockfish
-      sha: 0920370fe997c1c740b84a5054452b6f6d8c455f
+      owner: DanSamek
+      sha: e1b3c927e781e62d2c6c0b6323ad12c3e34c47c9
     binpack: official-stockfish/master-binpacks/fishpack32.binpack
     evalfile: small
     options:
@@ -95,8 +95,8 @@ testing:
       sha: ed651aab544a330a9c8ae0dc2d8d51d5d48a8112
   testing:
     code:
-      owner: official-stockfish
-      sha: ed651aab544a330a9c8ae0dc2d8d51d5d48a8112
+      owner: DanSamek
+      sha: 6f3d4a5bd0e3613e85a4110d30be218580900458
   fastchess:
     code:
       owner: Disservin
