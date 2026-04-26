@@ -75,8 +75,41 @@ training:
         owner: official-stockfish
         sha: 0920370fe997c1c740b84a5054452b6f6d8c455f
     - <repeat_last>:
-      run:
-        resume: previous_model
+        run:
+          resume: previous_model
+          binpacks:
+            - linrock/dual-nnue/hse-v1/dfrc99-16tb7p-eval-filt-v2.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/leela96-filt-v2.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test60-novdec2021-12tb7p-filter-v6-dd.min-mar2023.unmin.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test77-nov2021-2tb7p.no-db.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test77-dec2021-16tb7p.no-db.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test77-jan2022-2tb7p.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test78-jantomay2022-16tb7p-filter-v6-dd.min-mar2023.unmin.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test78-juntosep2022-16tb7p-filter-v6-dd.min-mar2023.unmin.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test79-apr2022-16tb7p.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test79-may2022-16tb7p-filter-v6-dd.min-mar2023.unmin.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test80-apr2022-16tb7p.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test80-may2022-16tb7p.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test80-jun2022-16tb7p-filter-v6-dd.min-mar2023.unmin.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test80-jul2022-16tb7p.v6-dd.min.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test80-sep2022-16tb7p-filter-v6-dd.min-mar2023.unmin.high-simple-eval-1k.min-v2.binpack
+            - linrock/dual-nnue/hse-v1/test80-nov2022-16tb7p-v6-dd.min.high-simple-eval-1k.min-v2.binpack
+            - vondele/from_kaggle_1/leela96-filt-v2.min.split_0.binpack
+            - vondele/from_kaggle_1/leela96-filt-v2.min.split_1.binpack
+            - vondele/from_kaggle_1/leela96-filt-v2.min.split_2.binpack
+            - vondele/from_kaggle_1/leela96-filt-v2.min.split_3.binpack
+            - vondele/from_kaggle_1/leela96-filt-v2.min.split_4.binpack
+            - linrock/test60/test60-2021-11-nov-12tb7p.min-v2.binpack
+            - linrock/test60/test60-2021-12-dec-12tb7p.min-v2.binpack
+            - linrock/test77/test77-2021-12-dec-16tb7p.v6-dd.min.binpack
+            - linrock/test78/test78-2022-01-to-05-jantomay-16tb7p.v6-dd.min.binpack
+            - linrock/test79/test79-2022-04-apr-16tb7p.v6-dd.min.binpack
+            - linrock/test79/test79-2022-05-may-16tb7p.v6-dd.min.binpack
+            - linrock/test78/test78-2022-06-to-09-juntosep-16tb7p.v6-dd.min.binpack
+            - linrock/test80-2023/test80-2023-11-nov-2tb7p.min-v2.binpack
+            - linrock/test80-2023/test80-2023-12-dec-2tb7p.min-v2.binpack
+            - linrock/test80-2024/test80-2024-01-jan-2tb7p.min-v2.v6.binpack
+            - linrock/test80-2024/test80-2024-02-feb-2tb7p.min-v2.v6.binpack
         other_options:
           - --gamma=0.9935
           - --lr=0.0004
