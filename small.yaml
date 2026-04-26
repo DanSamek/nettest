@@ -74,6 +74,12 @@ training:
       trainer:
         owner: official-stockfish
         sha: 0920370fe997c1c740b84a5054452b6f6d8c455f
+    - <repeat_last>:
+      run:
+        resume: previous_model
+        other_options:
+          - --gamma=0.9935
+          - --lr=0.0004
 #
 # Final testing stage using fastchess
 #
